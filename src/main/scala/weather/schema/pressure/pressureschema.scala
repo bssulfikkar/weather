@@ -24,7 +24,7 @@ case class SchemaGeneral(
  * Pressure reading schema for year 1938
  */
 case class Schema1938(
-  space:            String,
+  extra:            String,
   year:             String,
   month:            String,
   day:              String,

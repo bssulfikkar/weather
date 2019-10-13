@@ -1,4 +1,4 @@
-package sulfi.spark.pressure
+package scala.spark.pressure
 
 import java.io.FileNotFoundException
 import scala.util.Failure
@@ -9,12 +9,12 @@ import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.lit
 
-import sulfi.weather.utils.pressure
-import sulfi.spark.weather.helper.SparkConfiguration
-import sulfi.weather.schema.pressure.SchemaGeneral
-import sulfi.weather.schema.pressure.Schema1938
-import sulfi.weather.schema.pressure.Schema1756
-import sulfi.weather.schema.pressure.Schema1859
+import scala.weather.utils.pressure
+import scala.spark.helper.SparkConfiguration
+import scala.weather.schema.pressure.SchemaGeneral
+import scala.weather.schema.pressure.Schema1938
+import scala.weather.schema.pressure.Schema1756
+import scala.weather.schema.pressure.Schema1859
 
 /**
  * Spark program that transforms pressure data and stores it in hive table.
@@ -37,7 +37,7 @@ import sulfi.weather.schema.pressure.Schema1859
     // Naming spark program
     spark.conf.set("spark.app.name", "Pressure transformation and analysis")
     log.info("Pressure weather data transformation and analysis started")
-    pressureAnalysis(spark)
+    pressureCleanup(spark)
     stopSpark()
   }
 
@@ -46,7 +46,7 @@ import sulfi.weather.schema.pressure.Schema1859
    *
    * @param sparkSession
    */
-  def pressureAnalysis(sparkSession: SparkSession): Unit = {
+  def pressureCleanup(sparkSession: SparkSession): Unit = {
 
     // Reading property file
     val pressUtils = new pressureUtils()
@@ -122,7 +122,7 @@ import sulfi.weather.schema.pressure.Schema1859
         .map(x => Schema1938(x(0), x(1), x(2), x(3), x(4), x(5), x(6)))
       val pressureData1938TempDF = sparkSession.createDataFrame(pressureData1938RDD)
       val pressureData1938SchemaDF = pressureData1938TempDF
-        .drop("space")
+        .drop("extra")
         .withColumn("station", lit("NaN"))
         .withColumn("pressure_unit", lit("hpa"))
         .withColumn("barometer_temperature_observations_1", lit("NaN"))
@@ -152,7 +152,7 @@ import sulfi.weather.schema.pressure.Schema1859
         .map(x => Schema1938(x(0), x(1), x(2), x(3), x(4), x(5), x(6)))
       val pressureData1862TempDF = sparkSession.createDataFrame(pressureData1862RDD)
       val pressureData1862SchemaDF = pressureData1862TempDF
-        .drop("space")
+        .drop("extra")
         .withColumn("station", lit("NaN"))
         .withColumn("pressure_unit", lit("mmhg"))
         .withColumn("barometer_temperature_observations_1", lit("NaN"))

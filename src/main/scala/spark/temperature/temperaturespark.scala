@@ -1,4 +1,4 @@
-package sulfi.spark.temperature
+package scala.spark.temperature
 
 import java.io.FileNotFoundException
 import scala.util.Failure
@@ -8,12 +8,12 @@ import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.lit
 
-import sulfi.spark.weather.helper.SparkConfiguration
-import sulfi.weather.schema.temperatureschema.ActualSchema
-import sulfi.weather.schema.temperatureschema.UncleanSchema
-import sulfi.weather.schema.temperatureschema.AutomaticSchema
-import sulfi.weather.schema.temperatureschema.ManualSchema
-import sulfi.weather.utils.temperature
+import scala.spark.helper.SparkConfiguration
+import scala.weather.schema.temperatureschema.ActualSchema
+import scala.weather.schema.temperatureschema.UncleanSchema
+import scala.weather.schema.temperatureschema.AutomaticSchema
+import scala.weather.schema.temperatureschema.ManualSchema
+import scala.weather.utils.temperature
 
 /**
  * Spark program that transforms temperature data and stores it in hive table.
