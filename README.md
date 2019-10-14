@@ -1,19 +1,19 @@
 ## Loading Weather data into Hive table using scala and spark  using scala and spark ##
 
-build using maven
+#build using maven
 
-Data is available in the below urls
+#Data is available in the below urls
 
-Temperature Data: 
+#Temperature Data: 
 https://bolin.su.se/data/stockholm/raw_individual_temperature_observations.php
 
 
-Pressure Data: 
+#Pressure Data: 
 https://bolin.su.se/data/stockholm/barometer_readings_in_original_units.php
 
-temperatureconfig.properties and pressureconfig.properties files are created to keep the mapping of input files
+#temperatureconfig.properties and pressureconfig.properties files are created to keep the mapping of input files
 
-Temperature Input Paths are as below
+#Temperature Input Paths are as below
 temperature.manual.input.dir 
 temperature.automatic.input.dir
 temperature.space.input.dir
