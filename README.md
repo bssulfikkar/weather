@@ -14,12 +14,14 @@ https://bolin.su.se/data/stockholm/barometer_readings_in_original_units.php
 #temperatureconfig.properties and pressureconfig.properties files are created to keep the mapping of input files#
 
 #Temperature Input Paths are as below#
+
 temperature.manual.input.dir 
 temperature.automatic.input.dir
 temperature.space.input.dir
 temperature.actual.input.dir
 
 #Pressure Input Paths are as below#
+
 pressure.automatic.input.dir
 pressure.manual.input.dir 
 pressure.1938.input.dir 
