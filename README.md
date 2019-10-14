@@ -1,4 +1,4 @@
-## Loading Weather data into Hive table using scala and spark  using scala and spark ##
+## Loading Weather data into Hive table using scala and spark ##
 
 1. **Data is available in the below urls**
 
