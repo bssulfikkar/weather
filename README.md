@@ -39,20 +39,30 @@ pressure.1961.input.dir
 
 **Temperature property file**
 
-temperature.manual.input.dir  stores stockholm_daily_temp_obs_2013_2017_t1t2t3txtntm.txt   
-temperature.automatic.input.dir  stores stockholmA_daily_temp_obs_2013_2017_t1t2t3txtntm.txt    
-temperature.space.input.dir  stores stockholm_daily_temp_obs_1756_1858_t1t2t3.txt    	
+temperature.manual.input.dir  stores stockholm_daily_temp_obs_2013_2017_t1t2t3txtntm.txt
+
+temperature.automatic.input.dir  stores stockholmA_daily_temp_obs_2013_2017_t1t2t3txtntm.txt
+
+temperature.space.input.dir  stores stockholm_daily_temp_obs_1756_1858_t1t2t3.txt
+
 temperature.actual.input.dir  stores stockholm_daily_temp_obs_1859_1960_t1t2t3txtn.txt
+
 temperature.actual.input.dir  stores stockholm_daily_temp_obs_1961_2012_t1t2t3txtntm.txt
 
 **Pressure Property file**
 
 stockholm_barometer_2013_2017.txt   stores   pressure.manual.input.dir
+
 stockholmA_barometer_2013_2017.txt  stores   pressure.automatic.input.dir
+
 stockholm_barometer_1938_1960.txt   stores pressure.1938.input.dir
+
 stockholm_barometer_1862_1937.txt   stores  pressure.1862.input.dir
+
 stockholm_barometer_1756_1858.txt   stores pressure.1756.input.dir
+
 stockholm_barometer_1859_1861.txt   stores  pressure.1859.input.dir
+
 stockholm_barometer_1961_2012.txt   stores pressure.1961.input.dir
 
 **Build the jar using maven**
@@ -74,9 +84,15 @@ spark-submit --class scala.spark.Temperature --master yarn <path to weather-1.0.
 **Git Code Checkin**
 
 cd "local repository path"
+
 git init
+
 git add .
+
 git commit -m First commit
+
 git remote add origin "git hub url"
+
 git remote -v
+
 git push origin master -f
