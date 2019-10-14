@@ -15,19 +15,28 @@ https://bolin.su.se/data/stockholm/barometer_readings_in_original_units.php
 
 #Temperature Input Paths are as below#
 
-temperature.manual.input.dir 
+temperature.manual.input.dir
+
 temperature.automatic.input.dir
+
 temperature.space.input.dir
+
 temperature.actual.input.dir
 
 #Pressure Input Paths are as below#
 
 pressure.automatic.input.dir
-pressure.manual.input.dir 
-pressure.1938.input.dir 
-pressure.1862.input.dir 
-pressure.1756.input.dir 
+
+pressure.manual.input.dir
+
+pressure.1938.input.dir
+
+pressure.1862.input.dir
+
+pressure.1756.input.dir
+
 pressure.1859.input.dir
+
 pressure.1961.input.dir
 
 Temperature property file
