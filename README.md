@@ -29,9 +29,9 @@ pressure.1859.input.dir
 pressure.1961.input.dir
 
 Temperature property file
-temperature.manual.input.dir will store stockholm_daily_temp_obs_2013_2017_t1t2t3txtntm.txt     
-temperature.automatic.input.dir will store stockholmA_daily_temp_obs_2013_2017_t1t2t3txtntm.txt    
-temperature.space.input.dir will store stockholm_daily_temp_obs_1756_1858_t1t2t3.txt    	
+temperature.manual.input.dir will store stockholm_daily_temp_obs_2013_2017_t1t2t3txtntm.txt 
+temperature.automatic.input.dir will store stockholmA_daily_temp_obs_2013_2017_t1t2t3txtntm.txt
+temperature.space.input.dir will store stockholm_daily_temp_obs_1756_1858_t1t2t3.txt
 temperature.actual.input.dir will store stockholm_daily_temp_obs_1859_1960_t1t2t3txtn.txt
 temperature.actual.input.dir will store stockholm_daily_temp_obs_1961_2012_t1t2t3txtntm.txt
 
