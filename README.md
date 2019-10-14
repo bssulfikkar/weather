@@ -85,9 +85,15 @@ spark-submit --class scala.spark.Temperature --master yarn <path to weather-1.0.
 Git Code Checkin
 
 cd local repository path
+
 git init
+
 git add .
+
 git commit -m First commit
+
 git remote add origin git hub url
+
 git remote -v
+
 git push origin master -f
