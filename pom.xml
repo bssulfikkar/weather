@@ -11,7 +11,7 @@
         <encoding>UTF-8</encoding>
         <scala.version>2.11.11</scala.version>
         <scala.compat.version>2.11</scala.compat.version>
-        <spark.core.version>2.4.4</spark.core.version>
+        <spark.core.version>3.4.0</spark.core.version>
         <spark.sql.version>2.4.4</spark.sql.version>
         <log4j.version>1.2.17</log4j.version>
     </properties>
